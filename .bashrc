@@ -1,8 +1,3 @@
-#Prompt
-#PS1="\[\033[31m\][\d]\[\033[31m\][\t]\[\033[32m\][\s-\V][\!][\#]\[\033[31m\]\n\u@\H\w$"
-#PS1="[\[\033[31m\]\d_\t]\[\033[32m\][\s-\V][\!][\#]\[\033[32m\] \n\u@\H\w$"
-#PS1="[\[\e[31m\]\d\[\e[m\]_\[\e[31m\]\t\[\e[m\]][\[\e[32m\]\s\[\e[m\]\[\e[32m\]-\V\[\e[m\][\!--\#]\[\e[36m\]\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[36m\]\H\[\e[m\]\[\e[36m\]\w\[\e[m\] "
-
 # get current branch in git repo
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
@@ -56,6 +51,8 @@ function nonzero_return() {
 }
 
 export PS1="[\[\e[34m\]\d\[\e[m\]_\[\e[34m\]\t\[\e[m\]][\[\e[32m\]\s\[\e[m\]\[\e[32m\]\V\[\e[m\]][\[\e[31m\]\`nonzero_return\`\[\e[m\]][\[\e[35m\]\`parse_git_branch\`\[\e[m\]]\[\e[36m\][\!--\#]\n\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[36m\]\H\[\e[m\]\[\e[36m\]\w\[\e[m\] "
+
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
