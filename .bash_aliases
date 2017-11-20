@@ -17,3 +17,8 @@ alias cdc='cd && clear'
 #Youtube-dl
 alias dl='youtube-dl'
 alias dla='youtube-dl -x --audio-format mp3'
+
+#Apt fixes
+alias update='sudo apt update'
+alias upgrade='sudo apt upgrade'
+alias list='apt list --upgradable'
