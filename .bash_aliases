@@ -13,3 +13,7 @@ alias cd.='cd ..'
 alias cd..='cd ..'
 alias cd2='cd ../..'
 alias cdc='cd && clear'
+
+#Youtube-dl
+alias dl='youtube-dl'
+alias dla='youtube-dl -x --audio-format mp3'
