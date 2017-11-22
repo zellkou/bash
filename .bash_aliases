@@ -5,7 +5,7 @@ alias fuck='sudo $(history -p \!\!)'
 alias ssh='ssh -v'
 
 #LS Fixes
-alias ll='ls -al --color=auto'
+alias ll='ls -alF --color=auto'
 alias l='ls -aF --color=auto'
 
 #CD Fixes
@@ -17,8 +17,10 @@ alias cdc='cd && clear'
 #Youtube-dl
 alias dl='youtube-dl'
 alias dla='youtube-dl -x --audio-format mp3'
+alias dlj='youtube-dl --sub-lang "English (US)" --embed-subs'
 
 #Apt fixes
 alias update='sudo apt update'
 alias upgrade='sudo apt upgrade'
 alias list='apt list --upgradable'
+
