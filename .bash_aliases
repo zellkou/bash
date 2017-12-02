@@ -24,3 +24,5 @@ alias update='sudo apt update'
 alias upgrade='sudo apt upgrade'
 alias list='apt list --upgradable'
 
+#Clear
+alias cl='clear'
