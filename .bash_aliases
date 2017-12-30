@@ -5,7 +5,7 @@ alias fuck='sudo $(history -p \!\!)'
 alias ssh='ssh -v'
 
 #LS Fixes
-alias ll='ls -alF --color=auto'
+alias ll='ls -halF --color=auto'
 alias l='ls -aF --color=auto'
 
 #CD Fixes
