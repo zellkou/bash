@@ -26,3 +26,6 @@ alias list='apt list --upgradable'
 
 #Clear
 alias cl='clear'
+
+#du
+alias du='du -h'
