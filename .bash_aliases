@@ -28,4 +28,7 @@ alias list='apt list --upgradable'
 alias cl='clear'
 
 #du
-alias du='du -h'
+alias du='du -sh'
+
+#Neofetch
+alias neo='neofetch'
