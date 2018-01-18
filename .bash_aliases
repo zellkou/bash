@@ -15,9 +15,9 @@ alias cd2='cd ../..'
 alias cdc='cd && clear'
 
 #Youtube-dl
-alias dl='youtube-dl'
-alias dla='youtube-dl -x --audio-format mp3'
-alias dlj='youtube-dl --sub-lang "English (US)" --embed-subs'
+alias dl='youtube-dl -n'
+alias dla='youtube-dl -x -n --audio-format mp3'
+alias dlj='youtube-dl -n --sub-lang "English (US)" --embed-subs'
 
 #Apt fixes
 alias update='sudo apt update'
