@@ -50,7 +50,7 @@ function nonzero_return() {
 	[ $RETVAL -ne 0 ] && echo "$RETVAL"
 }
 
-export PS1="[\[\e[34m\]\d\[\e[m\]_\[\e[34m\]\t\[\e[m\]][\[\e[32m\]\s\[\e[m\]\[\e[32m\]\V\[\e[m\]][\[\e[31m\]\`nonzero_return\`\[\e[m\]][\[\e[35m\]\`parse_git_branch\`\[\e[m\]]\[\e[36m\][\!--\#]\n\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[36m\]\H\[\e[m\]\[\e[36m\]\w\[\e[m\] "
+export PS1="[\[\e[34m\]\d\[\e[m\]_\[\e[34m\]\t\[\e[m\]][\[\e[32m\]\s\[\e[m\]\[\e[32m\]\V\[\e[m\]][\[\e[31m\]\`nonzero_return\`\[\e[m\]][\[\e[35m\]\`parse_git_branch\`\[\e[m\]]\[\e[36m\][\!-\#]\n\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[36m\]\H\[\e[m\]\[\e[36m\]\w\[\e[m\] "
 
 
 # If not running interactively, don't do anything
@@ -76,3 +76,7 @@ shopt -s checkwinsize
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
