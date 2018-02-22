@@ -23,6 +23,8 @@ alias dlj='youtube-dl -n --sub-lang "English (US)" --embed-subs'
 alias update='sudo apt update'
 alias upgrade='sudo apt upgrade'
 alias list='apt list --upgradable'
+alias autoremove='sudo apt autoremove'
+alias autoclean='sudo apt autoclean'
 
 #Clear
 alias cl='clear'
