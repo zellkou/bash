@@ -21,10 +21,11 @@ alias dlj='youtube-dl -n --sub-lang "English (US)" --embed-subs'
 
 #Apt fixes
 alias update='sudo apt update'
-alias upgrade='sudo apt upgrade'
+alias upgrade='sudo apt upgrade -y'
 alias list='apt list --upgradable'
-alias autoremove='sudo apt autoremove'
+alias autoremove='sudo apt autoremove -y'
 alias autoclean='sudo apt autoclean'
+alias install='sudo apt install'
 
 #Clear
 alias cl='clear'
@@ -34,3 +35,17 @@ alias du='du -sh'
 
 #Neofetch
 alias neo='neofetch'
+
+#MV & CP
+alias cp='cp -rv'
+alias mv='mv -v'
+
+#mkdir
+alias mkdir='mkdir -p'
+
+#docker
+alias doc="docker-compose up -d"
+alias dod="docker-compose down"
+alias drm="docker rm"
+alias dls="docker container ls"
+alias dps="docker ps"
