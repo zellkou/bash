@@ -26,6 +26,7 @@ alias list='apt list --upgradable'
 alias autoremove='sudo apt autoremove -y'
 alias autoclean='sudo apt autoclean'
 alias install='sudo apt install'
+alias purge='sudo apt purge'
 
 #Clear
 alias cl='clear'
@@ -44,8 +45,7 @@ alias mv='mv -v'
 alias mkdir='mkdir -p'
 
 #docker
-alias doc="docker-compose up -d"
-alias dod="docker-compose down"
-alias drm="docker rm"
-alias dls="docker container ls"
-alias dps="docker ps"
+alias doc="docker-compose $1 -d"
+
+#git
+alias commit='git commit'

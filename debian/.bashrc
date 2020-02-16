@@ -50,7 +50,7 @@ function nonzero_return() {
 	[ $RETVAL -ne 0 ] && echo "$RETVAL"
 }
 
-export PS1="[\[\e[34m\]\d\[\e[m\]_\[\e[34m\]\t\[\e[m\]][\[\e[32m\]\s\[\e[m\]\[\e[32m\]\V\[\e[m\]][\[\e[31m\]\`nonzero_return\`\[\e[m\]][\[\e[35m\]\`parse_git_branch\`\[\e[m\]]\[\e[36m\][\!-\#]\n\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[36m\]\H\[\e[m\]\[\e[36m\]\w\[\e[m\] "
+export PS1="[\[\e[34m\]\d\[\e[m\]_\[\e[34m\]\t\[\e[m\]][\[\e[32m\]\s\[\e[m\]\[\e[32m\]\V\[\e[m\]][\[\e[31m\]\`nonzero_return\`\[\e[m\]][\[\e[35m\]\`parse_git_branch\`\[\e[m\]]\[\e[36m\][\!-\#]\n\u\[\e[m\]\[\e[36m\]@\[\e[m\]\[\e[36m\]\H\[\e[m\]\[\e[36m\]\w\[\e[m\]"
 
 
 # If not running interactively, don't do anything
@@ -76,3 +76,11 @@ shopt -s checkwinsize
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+# Exports
+
+export PATH=/home/jesse/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin:/opt
+export HOME=/home/jesse
+export EDITOR=nano
+export SHELL=/bin/bash
+export DSHELL=/bin/bash
