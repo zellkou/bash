@@ -49,3 +49,6 @@ alias doc="docker-compose $1 -d"
 
 #git
 alias commit='git commit'
+
+#ping
+alias ping='ping -v'
