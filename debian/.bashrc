@@ -79,8 +79,8 @@ fi
 
 # Exports
 
-export PATH=/home/jesse/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin:/opt
-export HOME=/home/jesse
+export PATH=/home/$USER/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin:/opt
+export HOME=/home/$USER
 export EDITOR=nano
 export SHELL=/bin/bash
 export DSHELL=/bin/bash
